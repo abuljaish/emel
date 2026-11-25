@@ -2,20 +2,8 @@
 .code-toolbar{display:flex;justify-content:flex-end;gap:6px;margin:0 0 7px}
 .copy-code,.code-delete{position:static;width:30px;height:28px;padding:0;border:1px solid var(--border);border-radius:7px;background:var(--surface);color:var(--muted);display:grid;place-items:center}
 .copy-code:hover,.code-delete:hover{background:var(--surface2);color:var(--text)}
-.code-editor{position:relative;height:190px;min-height:120px;resize:vertical;overflow:hidden;border:1px solid var(--border);border-radius:7px;background:#1e1e1e;--code-text:#d4d4d4;--code-comment:#6a9955;--code-string:#ce9178;--code-keyword:#569cd6;--code-constant:#569cd6;--code-number:#b5cea8;--code-type:#4ec9b0;--code-punctuation:#d4d4d4}
-[data-theme="dark"] .code-editor{background:#1e1e1e}
-[data-theme="light"] .code-editor{background:#1e1e1e}
-.code-highlight,.code-input{position:absolute;inset:0;width:100%;height:100%;margin:0;padding:12px;border:0;border-radius:0;font-family:"Cascadia Code",Consolas,"Courier New",monospace;font-size:13px;font-weight:400;line-height:1.55;letter-spacing:normal;tab-size:2;white-space:pre-wrap;overflow-wrap:anywhere;word-break:normal}
-.code-highlight{overflow:hidden;color:var(--code-text);pointer-events:none}
-.code-highlight code{font:inherit}
-.code-input{z-index:1;resize:none;overflow:auto;background:transparent!important;color:transparent!important;-webkit-text-fill-color:transparent;caret-color:#f8f8f8;outline:none}
-.code-input::placeholder{-webkit-text-fill-color:#858585}
-.code-input::selection{background:rgba(38,79,120,.85);color:transparent}
-.syntax-comment{color:var(--code-comment)}
-.syntax-string{color:var(--code-string)}
-.syntax-keyword{color:var(--code-keyword)}
-.syntax-constant{color:var(--code-constant)}
-.syntax-number{color:var(--code-number)}
-.syntax-type{color:var(--code-type)}
-.syntax-punctuation{color:var(--code-punctuation)}
+.code-editor{height:190px;min-height:120px;resize:vertical;overflow:hidden;border:1px solid var(--border);border-radius:7px;background:#1e1e1e}
+.code-mirror-host,.code-mirror-host .cm-editor{height:100%;min-height:0}
+.code-mirror-host .cm-editor{background:#1e1e1e}
+.code-mirror-host .cm-scroller{overflow:auto}
 .heading-input{color:#303a46}

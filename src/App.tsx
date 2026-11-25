@@ -1,4 +1,4 @@
-import { useMemo, useRef, useState, type RefObject } from 'react'
+import { lazy, Suspense, useMemo, useRef, useState, type RefObject } from 'react'
 import { Check, ChevronRight, Download, FileText, Filter, Menu, Moon, PanelLeftClose, Plus, Search, Settings, Sun, Trash2, Upload, X, Copy, RotateCcw, Pencil } from 'lucide-react'
 import { sheets as predefinedSheets } from './data/sheets'
 import { useLearningData, validateBackup } from './hooks/useLearningData'
@@ -7,6 +7,8 @@ import { exportBackup, readBackupFile } from './services/backup'
 import './App.css'
 import './social.css'
 import './notes.css'
+
+const CodeEditor=lazy(()=>import('./components/CodeEditor'))
 import './feedback.css'
 
 function ProgressBar({ value }: { value: number }) { return <div className="progress-track"><div className="progress-fill" style={{ width: `${value}%` }} /></div> }
@@ -124,13 +126,13 @@ function NotesPanel({topic,blocks,onClose,onSave}:{topic:SheetTopic;blocks:NoteB
   const update=(id:string,text:string)=>{const next=draft.map(b=>b.id===id?{...b,text} as NoteBlock:b);setDraft(next);onSave(next);setSaving(true);setTimeout(()=>setSaving(false),350)}
   const add=(type:NoteBlock['type'])=>{const next=[...draft,{id:uid(),type,text:''} as NoteBlock];setDraft(next);onSave(next)}
   const remove=(id:string)=>{const next=draft.filter(b=>b.id!==id);setDraft(next);onSave(next)}
-  return <div className="notes-backdrop"><aside className="notes-panel">
+  return <div className="notes-backdrop" onClick={onClose}><aside className="notes-panel" onClick={event=>event.stopPropagation()}>
     <div className="notes-header"><div><p>Topic notes</p><h2>{topic.title}</h2></div><button className="icon-button" onClick={onClose}><X size={19}/></button></div>
     <div className="notes-save"><span className={saving?'pulse':''}/>{saving?'Saving…':'Saved automatically'}</div>
     <div className="note-blocks">{draft.map(block=><div className={`note-block ${block.type}`} key={block.id}>
       {block.type==='heading'?<><input className="heading-input" value={block.text} onChange={e=>update(block.id,e.target.value)} placeholder="Heading"/><button className="block-delete" onClick={()=>remove(block.id)} aria-label="Delete heading block"><Trash2 size={15}/></button></>:block.type==='code'?<>
         <div className="code-toolbar"><button className="copy-code" onClick={()=>navigator.clipboard?.writeText(block.text)} aria-label="Copy code" title="Copy code"><Copy size={15}/></button><button className="block-delete code-delete" onClick={()=>remove(block.id)} aria-label="Delete code block" title="Delete code block"><Trash2 size={15}/></button></div>
-        <CodeEditor value={block.text} onChange={text=>update(block.id,text)}/>
+        <Suspense fallback={<div className="code-editor" aria-label="Loading code editor"/>}><CodeEditor value={block.text} onChange={text=>update(block.id,text)}/></Suspense>
       </>:<>
         <textarea className="text-input" value={block.text} onChange={e=>update(block.id,e.target.value)} placeholder="Write a note…"/>
         <button className="block-delete" onClick={()=>remove(block.id)} aria-label="Delete note block"><Trash2 size={15}/></button>
@@ -139,5 +141,3 @@ function NotesPanel({topic,blocks,onClose,onSave}:{topic:SheetTopic;blocks:NoteB
     <div className="add-blocks"><button onClick={()=>add('heading')}><Plus size={15}/>Heading</button><button onClick={()=>add('text')}><Plus size={15}/>Text</button><button onClick={()=>add('code')}><Plus size={15}/>Code</button></div>
   </aside></div>
 }
-
-function CodeEditor({value,onChange}:{value:string;onChange:(text:string)=>void}){const highlightRef=useRef<HTMLPreElement>(null);const tokens=value.split(/(\/\/[^\n]*|#[^\n]*|\/\*[\s\S]*?\*\/|"""[\s\S]*?"""|'''[\s\S]*?'''|"(?:\\.|[^"\\])*"|'(?:\\.|[^'\\])*'|`(?:\\.|[^`\\])*`|\b(?:const|let|var|function|return|if|else|for|while|class|new|import|from|export|default|async|await|try|catch|def|print|in|is|not|and|or|pass|break|continue|switch|case|throw|extends|implements|interface|type|public|private|static|void|fn|use|mut|pub|self)\b|\b(?:true|false|null|undefined|None|True|False|this|self)\b|\b\d+(?:\.\d+)?\b|[{}()[\].,;:+*/%=<>!?&|~-])/g);return <div className="code-editor"><pre className="code-highlight" ref={highlightRef} aria-hidden="true"><code>{tokens.map((token,index)=>{let kind='';if(token.startsWith('//')||token.startsWith('#')||token.startsWith('/*'))kind='comment';else if(/^["'`]/.test(token))kind='string';else if(/^(?:const|let|var|function|return|if|else|for|while|class|new|import|from|export|default|async|await|try|catch|def|print|in|is|not|and|or|pass|break|continue|switch|case|throw|extends|implements|interface|type|public|private|static|void|fn|use|mut|pub|self)$/.test(token))kind='keyword';else if(/^(?:true|false|null|undefined|None|True|False|this|self)$/.test(token))kind='constant';else if(/^\d/.test(token))kind='number';else if(/^[A-Z]/.test(token))kind='type';else if(/^[{}()[\].,;:+*/%=<>!?&|~-]$/.test(token))kind='punctuation';return kind?<span className={`syntax-${kind}`} key={index}>{token}</span>:token})}</code></pre><textarea className="code-input" value={value} onChange={e=>onChange(e.target.value)} onScroll={e=>{if(highlightRef.current){highlightRef.current.scrollTop=e.currentTarget.scrollTop;highlightRef.current.scrollLeft=e.currentTarget.scrollLeft}}} placeholder="Write code…" spellCheck={false} aria-label="Code block"/></div>}
