@@ -28,3 +28,7 @@
 .progress-fill{background:#2e9b62}
 .topic-row.completed .topic-title>span:last-child{color:var(--text);font-weight:700;text-decoration:none}
 .topic-title input:checked+.custom-check{background:#2e9b62;border-color:#2e9b62}
+.dashboard-actions{display:flex;align-items:center;gap:8px}
+.dashboard-create-sheet{background:#378ed7;color:#fff;border-color:#378ed7}
+.dashboard-create-sheet:hover{background:#2679c1;border-color:#2679c1}
+@media(max-width:620px){.dashboard-actions{flex-wrap:wrap;justify-content:flex-end}.dashboard-actions .button{height:36px;padding:0 10px;font-size:12px}}
