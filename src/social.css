@@ -1,0 +1,30 @@
+.nav-item.settings{margin-top:12px}
+.sidebar-footer{margin-top:auto;padding:12px 10px 4px;border-top:1px solid var(--border);display:flex;align-items:center;justify-content:space-between;gap:8px;color:var(--muted);font-size:11px}
+.sidebar-footer strong{color:var(--text);font-weight:650}
+.social-links{display:flex;gap:6px}
+.social-links a{width:30px;height:30px;border:1px solid var(--border);border-radius:9px;display:grid;place-items:center;color:var(--muted);background:var(--surface);transition:transform .18s ease,color .18s ease,border-color .18s ease,background .18s ease,box-shadow .18s ease}
+.social-links a svg{width:17px;height:17px}
+.social-links a:hover{transform:translateY(-2px);color:var(--text);border-color:#9aa8b8;background:var(--surface2);box-shadow:0 4px 12px rgba(35,47,61,.12)}
+.brand{transition:transform .18s ease,filter .18s ease}
+.brand:hover{transform:translateY(-1px) scale(1.025);filter:drop-shadow(0 3px 7px rgba(73,89,107,.22))}
+.brand img{transition:transform .2s ease,box-shadow .2s ease}
+.brand:hover img{transform:rotate(-3deg);box-shadow:0 4px 14px rgba(73,89,107,.2)}
+.delete-sheet-icon{color:#bd3e42;border-color:#efc5c6}
+.delete-sheet-icon:hover{color:#a32228;background:#fff0f0;border-color:#db777a}
+.dashboard-brand-heading{display:flex;align-items:center;gap:14px}
+.dashboard-brand-heading>img{width:50px;height:50px;border-radius:13px;box-shadow:0 2px 8px rgba(35,47,61,.12)}
+.dashboard-brand-heading h1{margin-top:0}
+.collapsed .sidebar-footer{justify-content:center}
+.collapsed .sidebar-footer>span{display:none}
+.topbar-brand{margin-right:auto;display:flex;align-items:center}
+.topbar-brand{font-family:Arial,Helvetica,sans-serif;font-size:30px;line-height:1;font-weight:650;letter-spacing:-1.8px}
+.wordmark-e{color:#303A46}
+[data-theme="dark"] .wordmark-e{color:#fff}
+.wordmark-m{color:#378ed7}
+.wordmark-l{color:#139b72}
+.nav-item span{min-width:0;overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
+.nav-item>svg{flex:0 0 18px;width:18px;height:18px}
+.sheet-card h2{display:-webkit-box;-webkit-box-orient:vertical;-webkit-line-clamp:2;overflow:hidden;overflow-wrap:anywhere;line-height:1.35;min-height:2.7em}
+.progress-fill{background:#2e9b62}
+.topic-row.completed .topic-title>span:last-child{color:var(--text);font-weight:700;text-decoration:none}
+.topic-title input:checked+.custom-check{background:#2e9b62;border-color:#2e9b62}

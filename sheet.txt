@@ -1,0 +1,134 @@
+﻿1. What is Machine Learning? | 100 Days of Machine Learning
+2. AI Vs ML Vs DL for Beginners in Hindi
+3. Types of Machine Learning for Beginners | Types of Machine learning in Hindi | Types of ML in Depth
+4. Batch Machine Learning | Offline Vs Online Learning | Machine Learning Types
+5. Online Machine Learning | Online Learning | Online Vs Offline Machine Learning
+6. Instance-Based Vs Model-Based Learning | Types of Machine Learning
+7. Challenges in Machine Learning | Problems in Machine Learning
+8. Application of Machine Learning | Real Life Machine Learning Applications
+9. Machine Learning Development Life Cycle | MLDLC in Data Science
+10. Data Engineer Vs Data Analyst Vs Data Scientist Vs ML Engineer | Data Science Job Roles
+11. What are Tensors | Tensor In-depth Explanation | Tensor in Machine Learning
+12. Installing Anaconda For Data Science | Jupyter Notebook for Machine Learning | Google Colab for ML
+13. End to End Toy Project | Day 13 | 100 Days of Machine Learning
+14. How to Frame a Machine Learning Problem | How to plan a Data Science Project Effectively
+15. Working with CSV files | Day 15 | 100 Days of Machine Learning
+16. Working with JSON/SQL | Day 16 | 100 Days of Machine Learning
+17. Fetching Data From an API | Day 17 | 100 Days of Machine Learning
+18. Fetching data using Web Scraping | Day 18 | 100 Days of Machine Learning
+19. Understanding Your Data | Day 19 | 100 Days of Machine Learning
+20. EDA using Univariate Analysis | Day 20 | 100 Days of Machine Learning
+21. EDA using Bivariate and Multivariate Analysis | Day 21 | 100 Days of Machine Learning
+22. Pandas Profiling | Day 22 | 100 Days of Machine Learning
+23. What is Feature Engineering | Day 23 | 100 Days of Machine Learning
+24. Feature Scaling - Standardization | Day 24 | 100 Days of Machine Learning
+25. Feature Scaling - Normalization | MinMaxScaling | MaxAbsScaling | RobustScaling
+26. Encoding Categorical Data | Ordinal Encoding | Label Encoding
+27. One Hot Encoding | Handling Categorical Data | Day 27 | 100 Days of Machine Learning
+28. Column Transformer in Machine Learning | How to use ColumnTransformer in Sklearn
+29. Machine Learning Pipelines A-Z | Day 29 | 100 Days of Machine Learning
+30. Function Transformer | Log Transform | Reciprocal Transform | Square Root Transform
+31. Power Transformer | Box - Cox Transform | Yeo - Johnson Transform
+32. Binning and Binarization | Discretization | Quantile Binning | KMeans Binning
+33. Handling Mixed Variables | Feature Engineering
+34. Handling Date and Time Variables | Day 34 | 100 Days of Machine Learning
+35. Handling Missing Data | Part 1 | Complete Case Analysis
+36. Handling missing data | Numerical Data | Simple Imputer
+37. Handling Missing Categorical Data | Simple Imputer | Most Frequent Imputation | Missing Category Imp
+38. Missing Indicator | Random Sample Imputation | Handling Missing Data Part 4
+39. KNN Imputer | Multivariate Imputation | Handling Missing Data Part 5
+40. Multivariate Imputation by Chained Equations for Missing Value | MICE Algorithm | Iterative Imputer
+41. What are Outliers | Outliers in Machine Learning
+42. Outlier Detection and Removal using Z-score Method | Handling Outliers Part 2
+43. Outlier Detection and Removal using the IQR Method | Handing Outliers Part 3
+44. Outlier Detection using the Percentile Method | Winsorization Technique
+45. Feature Construction | Feature Splitting
+46. Curse of Dimensionality
+47. Principle Component Analysis  (PCA) | Part 1 | Geometric Intuition
+48. Principle Component Analysis (PCA) | Part 2 | Problem Formulation and Step by Step Solution
+49. Principle Component Analysis(PCA) | Part 3 | Code Example and Visualization
+50. Simple Linear Regression | Code + Intuition | Simplest Explanation in Hindi
+51. Simple Linear Regression | Mathematical Formulation | Coding from Scratch
+52. Regression Metrics | MSE, MAE & RMSE | R2 Score & Adjusted R2 Score
+53. Multiple Linear Regression | Geometric Intuition & Code
+54. Multiple Linear Regression | Part 2 | Mathematical Formulation From Scratch
+55. Multiple Linear Regression | Part 3 | Code From Scratch
+56. What are the main Assumptions of Linear Regression? | Top 5 Assumptions of Linear Regression
+57. Gradient Descent From Scratch | End to End Gradient Descent | Gradient Descent Animation
+58. Batch Gradient Descent with Code Demo | Simple Explanation in Hindi
+59. Stochastic Gradient Descent
+60. Mini-Batch Gradient Descent
+61. Polynomial Regression | Machine Learning
+62. Bias Variance Trade-off | Overfitting and Underfitting in Machine Learning
+63. Ridge Regression Part 1 | Geometric Intuition and Code | Regularized Linear Models
+64. Ridge Regression Part 2 | Mathematical Formulation & Code from scratch | Regularized Linear Models
+65. Ridge Regression Part 3 | Gradient Descent | Regularized Linear Models
+66. 5 Key Points - Ridge Regression | Part 4 | Regularized Linear Models
+67. Lasso Regression | Intuition and Code Sample | Regularized Linear Models
+68. Why Lasso Regression creates sparsity?
+69. ElasticNet Regression | Intuition and Code Example | Regularized Linear Models
+70. Logistic Regression Part 1 | Perceptron Trick
+71. Logistic Regression Part 2 | Perceptron Trick Code
+72. Logistic Regression Part 3 | Sigmoid Function | 100 Days of ML
+73. Logistic Regression Part 4 | Loss Function | Maximum Likelihood | Binary Cross Entropy
+74. Derivative of Sigmoid Function
+75. Logistic Regression Part 5 | Gradient Descent & Code From Scratch
+76. Accuracy and Confusion Matrix | Type 1 and Type 2 Errors | Classification Metrics Part 1
+77. Precision, Recall and F1 Score | Classification Metrics Part 2
+78. ROC Curve in Machine Learning | ROC-AUC in Machine Learning Simplified | CampusX
+79. Softmax Regression || Multinomial Logistic Regression || Logistic Regression Part 6
+80. Polynomial Features in Logistic Regression | Non Linear Logistic Regression | Logistic Regression 7
+81. Logistic Regression Hyperparameters || Logistic Regression Part 8
+82. Naive Bayes Classifier | Part 1 | Conditional Probability
+83. Naive Bayes Classifier | Part 2 | Independent Events in Probability
+84. Naive Bayes Classifier | Part 3 | Mutually Exclusive Events
+85. Naive Bayes Classifier | Part 4 | Bayes Theorem in Probability
+86. Naive Bayes Classifier | Part 5 | Problem based upon Bayes Theorem
+87. Naive Bayes Classifier | Part 6 | Intuition
+88. Naive Bayes Classifier | Part 7 | Mathematics behind Naive Bayes Algorithm
+89. Naive Bayes Classifier | Part 8 | Simple Example Code
+90. Naive Bayes Part 9 | Handling Numerical Data
+91. What is K Nearest Neighbors? | KNN Explained in Hindi | Simple Overview in 1 Video | CampusX
+92. Support Vector Machines | Geometric Intuition
+93. Mathematics of SVM | Support Vector Machines | Hard margin SVM
+94. Mathematics of Support Vector Machine | Soft Margin SVM
+95. Kernel Trick in SVM | Geometric Intuition
+96. Kernel Trick in SVM | Code Example
+97. Decision Trees Geometric Intuition | Entropy | Gini impurity | Information Gain
+98. Decision Trees - Hyperparameters | Overfitting and Underfitting in Decision Trees
+99. Regression Trees | Decision Trees Part 3
+100. Awesome Decision Tree Visualization using dtreeviz library
+101. Introduction to Ensemble Learning | Ensemble Techniques in Machine Learning
+102. Voting Ensemble |  Introduction and Core Idea | Part 1
+103. Voting Ensemble | Classification | Voting Classifier | Hard Voting Vs Soft Voting | Part 2
+104. Voting Ensemble | Regression | Part 3
+105. Bagging | Introduction | Part 1
+106. Bagging Ensemble | Part 2 | Bagging Classifiers
+107. Bagging Ensemble | Part 3 | Bagging Regressor
+108. Introduction to Random Forest | Intuition behind the Algorithm
+109. How Random Forest Performs So Well? Bias Variance Trade-Off in Random Forest
+110. Bagging Vs Random Forest | What is the difference between Bagging and Random Forest | Very Important
+111. Random Forest Hyper-parameters
+112. Hyperparameter Tuning Random Forest using GridSearchCV and RandomizedSearchCV | Code Example
+113. OOB Score | Out of Bag Evaluation in Random Forest | Machine Learning
+114. Feature Importance using Random Forest and Decision Trees | How is Feature Importance calculated
+115. How Adaboost Classifier Works? | Geometric Intuition
+116. AdaBoost - A Step by Step Explanation
+117. AdaBoost Algorithm | Code from Scratch
+118. AdaBoost Hyperparameters | GridSearchCV in Adaboost
+119. Bagging Vs Boosting | What is the difference between Bagging and Boosting
+120. Gradient Boosting Explained | How Gradient Boosting Works?
+121. Gradient Boosting Regression Part 2 | Mathematics of Gradient Boosting
+122. Gradient Boosting for Classification | Geometric Intuition | CampusX
+123. Introduction to XGBOOST | Machine Learning | CampusX
+124. XGBoost for Regression | XGBoost Part 2 | CampusX
+125. XGBoost For Classification | How XGBoost works on Classification Problems | CampusX
+126. The Maths Behind XGBoost | Machine Learning | CampusX
+127. Stacking and Blending Ensembles
+128. K-Means Clustering Algorithm | Geometric Intuition | Clustering | Unsupervised Learning
+129. K-Means Clustering Algorithm in Python | Practical Example | Student Clustering Example | sklearn
+130. K-Means Clustering Algorithm From Scratch In Python | ML Algorithms From Scratch
+131. Agglomerative Hierarchical Clustering | Python Code Example
+132. DBSCAN Clustering Algorithms | Density Based Clustering | How DBSCAN Works | CampusX
+133. Imbalanced Data in Machine Learning | Undersampling | Oversampling | SMOTE
+134. Hyperparameter Tuning using Optuna | Bayesian Optimization using Optuna
