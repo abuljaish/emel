@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://emelweb.vercel.app/sitemap.xml
