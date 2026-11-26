@@ -7,3 +7,7 @@
 .code-mirror-host .cm-editor{background:#1e1e1e}
 .code-mirror-host .cm-scroller{overflow:auto}
 .heading-input{color:#303a46}
+.notes-button.has-notes{background:#e8f5e9;border-color:#81c784;color:#2e7d32}
+.notes-button.has-notes:hover{background:#d7eed9}
+[data-theme="dark"] .notes-button.has-notes{background:#24452d;border-color:#4f9b5b;color:#b8e6bf}
+[data-theme="dark"] .notes-button.has-notes:hover{background:#2c5637}
